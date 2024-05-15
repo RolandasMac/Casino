@@ -15,10 +15,15 @@ const emoji = [
 ]
 let dispBox = document.querySelectorAll('.box');
 const btnSukti = document.querySelector('#sukti');
+const btnReset = document.querySelector('#reset');
 
-initGame(emoji);
+btnSukti.addEventListener('click', sukti);
+btnReset.addEventListener('click', ()=>initGame(emoji));
 
 function initGame(arr){
+    for(let i = 0; i < dispBox.length; i++){
+        dispBox[i].innerHTML = "";
+    }
     let count = arr.length-1;
     console.log(count)
     for(let g=0; g<3; g++){
@@ -42,10 +47,11 @@ function initGame(arr){
     }
 
 }
+initGame(emoji);
 
 
-btnSukti.addEventListener('click', sukti);
 async function sukti() {
+
     for(let g=0; g<3; g++) {
         for (let i = 0; i < emoji.length; i++) {
             // disp[0].children[i].style.top = top + `px`
