@@ -25,14 +25,14 @@ function initGame(arr){
         dispBox[i].innerHTML = "";
     }
     let count = arr.length-1;
-    console.log(count)
+    // console.log(count)
     for(let g=0; g<3; g++){
 
         let arr1=[...arr];
         let startItem = arr1.splice(10, 1);
-        console.log(startItem)
+        // console.log(startItem)
         for(let i = count; i >=0; i--) {
-            console.log(i)
+            // console.log(i)
             let randomInt = Math.floor(Math.random() * arr1.length );
             const div = document.createElement('div');
             const span = document.createElement('span');
