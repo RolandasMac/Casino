@@ -1,0 +1,43 @@
+h1 {
+  color: red;
+}
+
+.disp {
+  height: 300px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.disp .box {
+  background-color: white;
+  position: relative;
+  height: 70px;
+  width: 90%;
+  border: 1px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.disp .box > div {
+  position: relative;
+  height: 70px;
+  top: -700px;
+  object-fit: cover;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 3s ease;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
